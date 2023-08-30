@@ -3,7 +3,6 @@ agenda=[]
 sair=False
 while(sair==False):
     print("\n---- Agenda Telefônica ----")
-    print("Lista de Opções")
     print("1 - Novo Contato")
     print("2 - Listar Contatos")
     print("3 - Editar Contato")
@@ -19,3 +18,8 @@ while(sair==False):
         novo_contato.append(telefone)
         agenda.append(novo_contato)
         os.system('cls')
+    
+    if(opcao==2):
+        for contato in agenda:
+            print("\nNome:",contato[0],"Telefone:",contato[1],"\n")
+    
